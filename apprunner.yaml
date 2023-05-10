@@ -2,9 +2,8 @@ version: 1.0
 runtime: corretto11
 build:
   commands:
-    build:
-      - ./gradlew build
+    build: ./gradlew build
 run:
-  command: java -Xms256m -jar build/libs/gradleapprunnersnap-0.0.1-SNAPSHOT.jar .
+  command: java -jar build/libs/gradleapprunnersnap-0.0.1-SNAPSHOT.jar
   network:
     port: 8080
